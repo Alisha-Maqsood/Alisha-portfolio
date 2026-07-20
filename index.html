@@ -14,6 +14,11 @@
 </head>
 
 <body>
+
+<button id="topBtn" title="Go to top">
+    ↑
+</button>
+    <div id="progress-bar"></div>
     <header>
 
     <nav class="navbar">
@@ -37,6 +42,12 @@
             <li><a href="#contact">Contact</a></li>
 
         </ul>
+        <button id="theme-toggle" class="theme-btn">
+    🌙
+</button>
+<div class="menu-toggle" id="menu-toggle">
+    ☰
+</div>
 
     </nav>
 
@@ -54,10 +65,8 @@
             <h1>Alisha Maqsood Malik</h1>
 
             <h3>
-                Python Developer |
-                Flask Developer |
-                AI Automation Engineer
-            </h3>
+    <span id="typing"></span>
+</h3>
 
             <p>
                 I am a Computer Science student passionate about Python,
@@ -140,9 +149,9 @@
 </section>
 <!--==================== SKILLS ====================-->
 
-<section id="skills" class="skills">
+<section id="skills" class="skills"></section>
 
-    <div class="container">
+<div class="container">
 
         <h2 class="section-title">My Skills</h2>
 
@@ -219,8 +228,8 @@
 </section>
 <!--==================== PROJECTS ====================-->
 
-</div>
-<section id="projects" class="projects">
+
+<section id="projects" class="projects"></section>
 
     <div class="container">
 
@@ -233,7 +242,7 @@
         <div class="projects-grid">
 
             <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card ">
 
                 <img src="images/library.png" alt="Library Management System">
 
@@ -397,11 +406,9 @@
     </div>
 
 </section>
-
-</section>
 <!--==================== SERVICES ====================-->
 
-<section id="services">
+<section id="services"></section>
 
     <div class="container">
 
@@ -519,53 +526,51 @@
 
 <section id="contact">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Contact Me
-        </h2>
+        <h2 class="section-title">Contact Me</h2>
 
         <p class="section-subtitle">
-
             Let's work together.
-
         </p>
 
         <div class="contact-box">
 
-            <p>
+            <form id="contact-form">
 
-                <strong>Name:</strong>
+                <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Your Name"
+                    required>
 
-                Alisha Maqsood Malik
+                <input
+                    type="email"
+                    name="from_email"
+                    placeholder="Your Email"
+                    required>
 
-            </p>
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required></textarea>
 
-            <p>
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
 
-                <strong>Email:</strong>
+            </form>
 
-                alishamaqsoodmalik@gmail.com
+            <p id="status"></p>
 
-            </p>
+            <br>
 
-          
+            <p><strong>Email:</strong> alishamaqsoodmalik@gmail.com</p>
 
-            <p>
+            <p><strong>Location:</strong> Sahiwal, Pakistan</p>
 
-                <strong>Location:</strong>
-
-                Sahiwal, Pakistan
-
-            </p>
-
-            <p>
-
-                <strong>Languages:</strong>
-
-                English • Urdu
-
-            </p>
+            <p><strong>Languages:</strong> English • Urdu</p>
 
         </div>
 
@@ -592,8 +597,9 @@
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </body>
-
 </html>
+

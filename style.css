@@ -25,6 +25,8 @@ body{
 
     line-height:1.7;
 
+    transition: background 0.4s ease, color 0.4s ease;
+
 }
 
 /* ===========================
@@ -292,17 +294,29 @@ BUTTONS
 
 .btn{
 
-    background:white;
+    background:#2563EB;
 
-    color:#2563EB;
+    color:white;
 
     padding:14px 30px;
+
+    border:none;
 
     border-radius:8px;
 
     font-weight:600;
 
+    cursor:pointer;
+
     transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
 
 }
 
@@ -766,4 +780,310 @@ width:280px;
 
 .hero-text{
 max-width:600px;
+}
+/* ===========================
+   THEME BUTTON
+=========================== */
+
+.theme-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#2563EB;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    transform:rotate(180deg);
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark{
+    background:#0F172A;
+    color:#fff;
+}
+
+body.dark header{
+    background:#1E293B;
+}
+
+body.dark .nav-links a{
+    color:white;
+}
+
+body.dark .about,
+body.dark .projects,
+body.dark .skill-card,
+body.dark .service-card,
+body.dark .project-card{
+    background:#1E293B;
+    color:white;
+}
+
+body.dark .skills{
+    background:#111827;
+}
+
+body.dark .project-content p,
+body.dark .service-card p,
+body.dark .skill-card p,
+body.dark .about-content p,
+body.dark .section-subtitle{
+    color:#d1d5db;
+}
+/*==========================
+TYPING EFFECT
+==========================*/
+
+#typing{
+    color:#FFD54F;
+    font-weight:600;
+    font-size:30px;
+}
+
+#typing::after{
+    content:"|";
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
+}
+/* ==========================
+   SCROLL PROGRESS BAR
+========================== */
+
+#progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,#2563EB,#60A5FA);
+
+    z-index:9999;
+
+    transition:width .2s;
+
+}
+/*==========================
+SCROLL TO TOP
+==========================*/
+
+#topBtn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    transform:translateY(-6px) scale(1.1);
+
+    background:#1D4ED8;
+
+}
+/*==========================
+ACTIVE NAVBAR
+==========================*/
+
+.nav-links a.active{
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    position:relative;
+
+}
+
+.nav-links a.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:100%;
+
+    height:3px;
+
+    background:#2563EB;
+
+    border-radius:5px;
+
+}
+/*==========================
+MOBILE MENU
+==========================*/
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#2563EB;
+}
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar{
+        position:relative;
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:90px;
+
+        left:0;
+
+        width:100%;
+
+        background:white;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:20px 0;
+
+        display:none;
+
+        box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+    }
+
+    body.dark .nav-links{
+        background:#1E293B;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+
+}
+.contact-box form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.contact-box input,
+.contact-box textarea{
+
+padding:15px;
+
+border:none;
+
+border-radius:8px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.contact-box textarea{
+
+resize:vertical;
+
+}
+
+#status{
+
+margin-top:15px;
+
+font-weight:600;
+
+}
+/* ==========================
+   CONTACT FORM
+========================== */
+
+.contact-box input,
+.contact-box textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    outline:none;
+
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 8px rgba(37,99,235,.3);
+
 }
