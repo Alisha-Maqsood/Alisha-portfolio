@@ -220,3 +220,18 @@ form.addEventListener("submit", function(e){
     });
 
 });
+// ===========================
+// Close Mobile Menu After Click
+// ===========================
+
+const navItems = document.querySelectorAll(".nav-links a");
+
+navItems.forEach(item => {
+
+    item.addEventListener("click", () => {
+
+        navMenu.classList.remove("show");
+
+    });
+
+});
