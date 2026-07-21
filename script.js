@@ -178,10 +178,16 @@ window.addEventListener("scroll", () => {
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.querySelector(".nav-links");
 
+// Open / Close Menu
 menuToggle.addEventListener("click", () => {
-
     navMenu.classList.toggle("show");
+});
 
+// Close Menu After Clicking Link
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+    });
 });
 // ============================
 // EmailJS Contact Form
@@ -216,21 +222,6 @@ form.addEventListener("submit", function(e){
         status.innerHTML = "❌ Failed to send message.";
         status.style.color = "red";
         console.log(error);
-
-    });
-
-});
-// ===========================
-// Close Mobile Menu After Click
-// ===========================
-
-const navItems = document.querySelectorAll(".nav-links a");
-
-navItems.forEach(item => {
-
-    item.addEventListener("click", () => {
-
-        navMenu.classList.remove("show");
 
     });
 
