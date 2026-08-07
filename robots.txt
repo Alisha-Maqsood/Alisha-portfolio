@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alisha-maqsood.github.io/Alisha-portfolio/sitemap.xml
