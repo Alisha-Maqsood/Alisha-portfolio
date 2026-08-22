@@ -1081,3 +1081,47 @@ font-weight:600;
     box-shadow:0 0 8px rgba(37,99,235,.3);
 
 }
+/* ==================== RESEARCH & PUBLICATIONS ==================== */
+
+.research {
+    padding: 80px 0;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.research-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-8px);
+}
+
+.research-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.research-card h3 {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.research-card p {
+    line-height: 1.7;
+}
+
+.research-card .project-tech {
+    margin: 20px 0;
+}
