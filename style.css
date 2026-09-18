@@ -122,21 +122,13 @@ header{
 }
 
 .navbar{
-
     width:90%;
-
     max-width:1200px;
-
     margin:auto;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    padding:20px 0;
-
+    padding:18px 0;
 }
 
 .logo{
@@ -150,13 +142,9 @@ header{
 }
 
 .nav-links{
-
     display:flex;
-
     list-style:none;
-
-    gap:30px;
-
+    gap:25px;
 }
 
 .nav-links a{
@@ -195,27 +183,18 @@ HERO SECTION
 }
 
 .hero-content{
-
     width:90%;
-
     max-width:1200px;
-
     margin:auto;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    gap:60px;
-
+    gap:50px;
+    padding:0 20px;
 }
-
 .hero-text{
-
     flex:1;
-
+    min-width:0;
 }
 
 .hero-text h4{
@@ -227,11 +206,9 @@ HERO SECTION
 }
 
 .hero-text h1{
-
-    font-size:60px;
-
+    font-size:56px;
+    line-height:1.15;
     margin-bottom:15px;
-
 }
 
 .hero-text h3{
@@ -245,13 +222,10 @@ HERO SECTION
 }
 
 .hero-text p{
-
-    font-size:18px;
-
-    max-width:600px;
-
+    font-size:17px;
+    max-width:620px;
     margin-bottom:35px;
-
+    line-height:1.8;
 }
 
 .hero-image{
@@ -262,20 +236,18 @@ HERO SECTION
 
 }
 
-.hero-image img{
 
-    width:380px;
-
-    height:380px;
-
+   .hero-image img{
+    width:360px;
+    height:360px;
     object-fit:cover;
-
+    object-position:center;
     border-radius:50%;
-
-    border:8px solid white;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.3);
-
+    border:none;
+    padding:0;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    display:block;
+    margin:auto;
 }
 /*==========================
 BUTTONS
@@ -319,11 +291,7 @@ BUTTONS
 
 }
 
-.btn:hover{
 
-    transform:translateY(-4px);
-
-}
 
 .btn-outline{
 
@@ -750,9 +718,13 @@ line-height:1.2;
 
 
 }
-.hero-image img{
-width:300px;
-height:300px;
+ @media(max-width:768px){
+
+    .hero-image img{
+    width:280px;
+    height:280px;
+}
+
 }
 .about-image img{
 
@@ -828,7 +800,7 @@ TYPING EFFECT
 #typing{
     color:#FFD54F;
     font-weight:600;
-    font-size:30px;
+    font-size:28px;
 }
 
 #typing::after{
@@ -1094,12 +1066,12 @@ font-weight:600;
     margin-top: 40px;
 }
 
-.research-card {
-    background: var(--card-bg);
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    transition: 0.3s ease;
+.research-card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
 }
 
 .research-card:hover {
