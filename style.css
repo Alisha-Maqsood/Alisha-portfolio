@@ -1097,3 +1097,27 @@ font-weight:600;
 .research-card .project-tech {
     margin: 20px 0;
 }
+
+/* Research Paper Card Styling */
+
+.research-card h3 {
+    color: #2563EB;
+}
+
+.research-card p {
+    color: #555;
+}
+
+.research-label {
+    color: #2563EB;
+}
+
+/* Research Card Dark Mode */
+
+body.dark .research-card {
+    background: #1E293B;
+}
+
+body.dark .research-card p {
+    color: #d1d5db;
+}
