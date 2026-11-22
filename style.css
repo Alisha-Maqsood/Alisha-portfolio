@@ -1121,3 +1121,247 @@ body.dark .research-card {
 body.dark .research-card p {
     color: #d1d5db;
 }
+
+/* ==================================
+   MOBILE RESPONSIVE DESIGN FIX
+   ================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* General */
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+        padding: 0 12px;
+    }
+
+    /* Navbar */
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 12px 0;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .theme-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 25px;
+        flex-shrink: 0;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        display: none;
+        padding: 20px;
+        background: white;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    body.dark .nav-links {
+        background: #1E293B;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 110px 0 60px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text h3,
+    #typing {
+        font-size: 20px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* About */
+    .about .container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects - MAIN FIX */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .project-content {
+        padding: 22px;
+    }
+
+    .project-content h3 {
+        font-size: 20px;
+    }
+
+    .project-content p {
+        font-size: 14px;
+    }
+
+    .project-tech span {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    /* Research */
+    .research-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .research-card {
+        padding: 22px;
+        min-width: 0;
+    }
+
+    .research-card h3 {
+        font-size: 19px;
+        overflow-wrap: anywhere;
+    }
+
+    .research-card p {
+        font-size: 14px;
+    }
+
+    /* Experience and Services */
+    .experience-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-box {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+        max-width: 100%;
+    }
+
+    /* Scroll to top */
+    #topBtn {
+        width: 42px;
+        height: 42px;
+        right: 12px;
+        bottom: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #topBtn {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .projects-grid {
+        gap: 25px;
+    }
+}
+
+
+/* Research Buttons Mobile Spacing */
+@media (max-width: 768px) {
+    .research-card .project-btn {
+        margin: 5px 8px 5px 0;
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+}
